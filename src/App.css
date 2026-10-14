@@ -1,0 +1,62 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.header-panel {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.sidebar-nav {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculator-area {
+  width: 100%;
+}
+
+.calc-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .calc-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.input-with-button {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+
+.input-with-button .input-group {
+  flex-grow: 1;
+  margin-bottom: 0;
+}
+
+.calc-btn {
+  padding: 0.75rem 1rem;
+  white-space: nowrap;
+}
+
+.tolerance-group {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0.5rem;
+}
